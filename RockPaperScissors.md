@@ -123,13 +123,13 @@ namespace RockPaperScissors
                 switch (value)
                 {
                     case 1:
-                        Console.WriteLine("Round " + i + " Winner: " + (theGame.Fight(john, dana)).Act());
+                        Console.WriteLine("Round " + i + " " + john.Act() + " VS " + dana.Act() + "  -----> WINNER: " + (theGame.Fight(john, dana)).Act());              
                         break;
                     case 2:
-                        Console.WriteLine("Round " + i + " Winner: " + (theGame.Fight(john, josie)).Act());
+                        Console.WriteLine("Round " + i + " " + john.Act() + " VS " + josie.Act() + "  -----> WINNER: " + (theGame.Fight(john, josie)).Act());
                         break;
                     default:
-                        Console.WriteLine("Round " + i + " Winner: " + (theGame.Fight(dana, josie)).Act());
+                        Console.WriteLine("Round " + i + " " + dana.Act() + " VS " + josie.Act() + "  -----> WINNER: " + (theGame.Fight(dana, josie)).Act());
                         break;
                 }
                 
@@ -162,7 +162,6 @@ namespace RockPaperScissors
     }
 
 }
-
 
 
 
